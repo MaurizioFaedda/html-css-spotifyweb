@@ -18,6 +18,7 @@ a {
 
 a:hover, .fas:hover{
     color: #1DB954;
+    cursor: pointer;
 }
 
 main {
@@ -88,6 +89,8 @@ nav {
 
 .hamburger:hover{
     color: #1DB954;
+    cursor: pointer;
+
 }
 
 .title {
@@ -115,6 +118,7 @@ nav {
 .box-img{
     max-width: 300px;
     margin: 0 auto;
+    padding-right: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -133,9 +137,11 @@ flex-grow: 1;
 
     text-align: center;
     margin-bottom: 40px;
+    position: relative;
 
 
 }
+
 
 .img-circle {
     border-radius:50%;
@@ -144,6 +150,15 @@ flex-grow: 1;
 .artist-img img {
     width: 130px;
     height: 130px;
+    opacity: 1;
+	transition: .3s ease-in-out;
+}
+
+
+
+.artist-img:hover img {
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .my-footer {
@@ -308,6 +323,7 @@ padding-bottom: 6px;
 
     .box-img {
         max-width: 720px;
+        padding-right: 0;
     }
 
     .artist-img {
@@ -419,7 +435,22 @@ padding-bottom: 6px;
     .box-img{
         max-width: 1020px;
         padding: 10px 20px;
+        padding-right: 0;
     }
+
+    .artist-img:hover::after{
+        content: "\f04b";
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        color: #1DB954;
+        opacity: 0.6;
+        font-size: 30px;
+        position: absolute;
+        top: 60%;
+        left: 38%;
+
+    }
+
 
     /* .box-img::after{
         content: '';
@@ -427,9 +458,9 @@ padding-bottom: 6px;
 
     } */
 
-    .artist-img {
+    /* .artist-img {
         width: calc(100% / 4);
-    }
+    } */
 
     .footer-right{
         display: flex;
