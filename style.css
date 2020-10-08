@@ -52,7 +52,7 @@ nav {
 
 .icon .fas {
     padding-bottom: 10px;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .icon {
@@ -99,7 +99,7 @@ nav {
 .artist-container{
     height: calc(100vh - 80px);
     width: 100%;
-    padding: 50px 20px;
+    padding: 50px 5px;
     padding-top: 20px;
     overflow: auto;
 
@@ -108,11 +108,12 @@ nav {
 }
 
 .box-img{
+    max-width: 300px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    flex-grow: 0;
+    flex-grow: 1;
 }
 
 
@@ -124,9 +125,10 @@ flex-grow: 1;
 }
 
 .artist-img {
-    width: 100%;
+
     text-align: center;
     margin-bottom: 40px;
+
 
 }
 
@@ -135,8 +137,8 @@ flex-grow: 1;
 }
 
 .artist-img img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
 
 .my-footer {
@@ -299,7 +301,7 @@ background: linear-gradient(90deg, rgba(29,185,84,1) 45%, rgba(255,255,255,1) 46
     }
 
     .artist-img {
-        width: 50%;
+
         text-align: center;
         margin-bottom: 80px;
         padding-right: 40px;
@@ -402,7 +404,6 @@ background: linear-gradient(90deg, rgba(29,185,84,1) 45%, rgba(255,255,255,1) 46
 
     .footer-right{
         display: flex;
-        
         justify-content: space-around;
         align-items: center;
 
