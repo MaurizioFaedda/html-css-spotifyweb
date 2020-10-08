@@ -6,12 +6,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+p{
+    color: #fff;
+    padding-top: 6px;
+}
+
 a {
     text-decoration: none;
     color: #fff;
 }
 
-a:hover{
+a:hover, .fas:hover{
     color: #1DB954;
 }
 
@@ -176,6 +181,11 @@ padding-bottom: 6px;
 
 .footer-right {
     display: none;
+}
+
+.mini-img {
+    border-radius: 2px;
+    border: 1px solid #fff;
 }
 
 .mini-img img {
