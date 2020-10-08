@@ -141,21 +141,38 @@ flex-grow: 1;
 
 .my-footer {
     height: 80px;
-    background-color: grey;
     display: flex;
     justify-content: space-between;
 }
 
+.my-footer i {
+    color: #fff;
+}
+
 .footer-left{
-    width: 300px;
+    width: 160px;
     height: 80px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-left-left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 
 }
 
-.mini-img{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+.footer-left-left span {
+padding-bottom: 6px;
+}
+
+.footer-right {
+    display: none;
 }
 
 .mini-img img {
@@ -164,11 +181,55 @@ flex-grow: 1;
 }
 
 .footer-center {
-    width: 800px;
-    background-color: #fff;
+    width: 100%;
+    background-color: #282828;
 }
 .footer-right {
     width: 300px;
+}
+
+.footer-center-top {
+    margin-top: 4px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-center-bottom {
+    position: relative;
+}
+
+.footer-center-bottom .bar {
+    padding-top: 10px;
+    height: 1px;
+    width: 64%;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+
+}
+
+.bar::before{
+    content: "1.50";
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    font-size: 14px;
+    padding-right: 8px;
+}
+.bar::after{
+    content: "3.21";
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+.footer-center-bottom {
+    height: 40px;
 }
 
 
@@ -224,9 +285,9 @@ flex-grow: 1;
 
     .title{
         font-size: 22px;
-        text-align: left;
-        padding-top: 50px;
-        padding-bottom: 25px;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 40px;
     }
 
     .artist-container{
@@ -239,6 +300,9 @@ flex-grow: 1;
 
     }
 
+    .footer-center-bottom .bar {
+        width: 80%;
+    }
 
 
 }
@@ -249,6 +313,9 @@ flex-grow: 1;
     padding: 40px 40px;
     } */
 
+    .title {
+        text-align: center;
+    }
 
     .hamburger{
         display: none;
