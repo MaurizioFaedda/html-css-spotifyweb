@@ -189,7 +189,7 @@ padding-bottom: 6px;
 }
 
 .footer-center-top {
-    margin-top: 4px;
+    padding-top: 4px;
     height: 40px;
     display: flex;
     justify-content: space-around;
@@ -229,7 +229,7 @@ padding-bottom: 6px;
 }
 
 .footer-center-bottom {
-    height: 40px;
+    height: 37px;
 }
 
 
