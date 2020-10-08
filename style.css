@@ -143,6 +143,7 @@ flex-grow: 1;
     height: 80px;
     display: flex;
     justify-content: space-between;
+    background-color: #282828;
 }
 
 .my-footer i {
@@ -194,7 +195,7 @@ padding-bottom: 6px;
 }
 
 .footer-right {
-    width: 300px;
+    width: 360px;
 }
 
 .footer-center-top {
@@ -203,6 +204,10 @@ padding-bottom: 6px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.fas.fa-step-backward, .fas.fa-step-forward{
+    font-size: 20px;
 }
 
 .footer-center-bottom {
@@ -220,7 +225,7 @@ background: linear-gradient(90deg, rgba(29,185,84,1) 45%, rgba(255,255,255,1) 46
 
 }
 
-.bar::before{
+.footer-center-bottom .bar::before{
     content: "1.50";
     color: #fff;
     position: absolute;
@@ -229,7 +234,7 @@ background: linear-gradient(90deg, rgba(29,185,84,1) 45%, rgba(255,255,255,1) 46
     font-size: 14px;
     padding-right: 8px;
 }
-.bar::after{
+.footer-center-bottom .bar::after{
     content: "3.21";
     color: #fff;
     position: absolute;
@@ -239,7 +244,7 @@ background: linear-gradient(90deg, rgba(29,185,84,1) 45%, rgba(255,255,255,1) 46
     padding-left: 8px;
 }
 
-.bar span::before{
+.footer-center-bottom .bar span::before{
     content: "\f111";
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
@@ -394,4 +399,37 @@ background: linear-gradient(90deg, rgba(29,185,84,1) 45%, rgba(255,255,255,1) 46
     .artist-img {
         width: calc(100% / 4);
     }
+
+    .footer-right{
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .bar-audio {
+        margin-left: -32px;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        position: relative;
+        background: rgb(29,156,185);
+background: linear-gradient(90deg, rgba(29,156,185,1) 76%, rgba(255,255,255,1) 76%);
+
+    }
+
+    .bar-audio span:after{
+        content: "\f111";
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        font-size: 12px;
+        padding-left: 8px;
+    }
+
+
 }
